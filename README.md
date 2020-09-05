@@ -2,7 +2,7 @@
 
 Everyone loves food, especially cheesecake. In this challenge, you will work with a recipe of your choice or given one.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6cee6ea2-400b-4ff2-8d7d-1fbdffc890bd/deploy-status)](https://app.netlify.com/sites/trusting-keller-8675ac/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0905639f-eb43-47f1-90e3-427021c6defa/deploy-status)](https://app.netlify.com/sites/lucid-beaver-abf335/deploys)
 
 ## Installation
 
