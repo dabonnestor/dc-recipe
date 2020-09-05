@@ -11,6 +11,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
 }
 
 h1,
@@ -21,7 +22,6 @@ h5,
 h6,
 p {
   margin: 0;
-  line-height: 1.5;
 }
 
 ul,
@@ -61,7 +61,7 @@ ol {
   margin-top: 1.6rem;
 }
 
-.header__description p {
+.header__description .text {
   font-size: 1.4rem;
   font-weight: 500;
   font-style: italic;
@@ -71,7 +71,7 @@ ol {
 }
 
 @media (max-width: 480px) {
-  .header__description p {
+  .header__description .text {
     font-size: 1.2rem;
   }
 }
@@ -88,15 +88,14 @@ ol {
 @media (max-width: 480px) {
   .header__image {
     height: 20.2rem;
-    object-position: bottom;
     margin-top: 2.4rem;
   }
 }
 
 .main {
   display: flex;
-  margin-top: 3.6rem;
   gap: 3.2rem;
+  margin-top: 3.6rem;
 }
 
 @media (max-width: 768px) {
@@ -106,36 +105,38 @@ ol {
   }
 }
 
-.recipe-time {
+.serving {
   order: 1;
   margin-left: auto;
 }
 
 @media (max-width: 768px) {
-  .recipe-time {
+  .serving {
     order: 0;
     margin-left: 0;
   }
 }
 
-.recipe-card {
+.serving-card {
   display: flex;
   flex-wrap: wrap;
   border-radius: 1.2rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   width: 21.6rem;
+  position: sticky;
+  top: 2.4rem;
   padding: 3.2rem;
 }
 
 @media (max-width: 768px) {
-  .recipe-card {
+  .serving-card {
     width: 100%;
     box-shadow: none;
     padding: 0;
   }
 }
 
-.recipe-card__row {
+.serving-card__row {
   display: flex;
   align-items: center;
   gap: 0.8rem;
@@ -143,44 +144,44 @@ ol {
 }
 
 @media (max-width: 768px) {
-  .recipe-card__row {
+  .serving-card__row {
     flex: 0 0 33.333%;
     margin: 0;
   }
 
-  .recipe-card__row:first-of-type {
+  .serving-card__row:first-of-type {
     flex: 0 0 100%;
     margin-bottom: 1.6rem;
   }
 }
 
-.recipe-card__row--active .recipe-card__col-1,
-.recipe-card__row--active .recipe-card__col-2 span:last-child {
+.serving-card__row--active .serving-card__col-1,
+.serving-card__row--active .serving-card__col-2 .text:last-child {
   color: #f2994a;
 }
 
-.recipe-card__col-1 {
+.serving-card__col-1 {
   color: #4f4f4f;
 }
 
-.recipe-card__col-1 svg {
+.serving-card__col-1 .icon {
   display: inline-block;
   height: 3.2rem;
   width: 3.2rem;
 }
 
 @media (max-width: 480px) {
-  .recipe-card__col-1 svg {
+  .serving-card__col-1 .icon {
     height: 2rem;
     width: 2rem;
   }
 }
 
-.recipe-card__col-2 span {
+.serving-card__col-2 .text {
   display: block;
 }
 
-.recipe-card__col-2 span:first-child {
+.serving-card__col-2 .text:first-child {
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -188,26 +189,26 @@ ol {
 }
 
 @media (max-width: 480px) {
-  .recipe-card__col-2 span:first-child {
+  .serving-card__col-2 .text:first-child {
     font-size: 0.8rem;
   }
 }
 
-.recipe-card__col-2 span:last-child {
+.serving-card__col-2 .text:last-child {
   font-size: 1.4rem;
   font-weight: 500;
-  color: #333333;
+  color: #333;
   margin-top: 0.6rem;
 }
 
 @media (max-width: 480px) {
-  .recipe-card__col-2 span:last-child {
+  .serving-card__col-2 .text:last-child {
     font-size: 1rem;
     margin-top: 0.2rem;
   }
 }
 
-.recipe-guide {
+.guide {
   max-width: 52.8rem;
 }
 
@@ -222,17 +223,17 @@ ol {
   }
 }
 
-.ingredients__head,
-.instructions__head {
+.ingredients__title,
+.instructions__title {
   font-family: "Playfair Display", serif;
   font-size: 2.4rem;
   font-weight: 700;
-  color: #333333;
+  color: #333;
 }
 
 @media (max-width: 480px) {
-  .ingredients__head,
-  .instructions__head {
+  .ingredients__title,
+  .instructions__title {
     font-size: 1.8rem;
   }
 }
@@ -242,7 +243,7 @@ ol {
   font-size: 1.8rem;
   font-weight: 400;
   font-style: italic;
-  color: #333333;
+  color: #333;
   margin-top: 2.4rem;
 }
 
@@ -258,13 +259,13 @@ ol {
   margin-top: 2.4rem;
 }
 
-.ingredients-list li,
-.instructions-list li {
+.ingredients-list .text,
+.instructions-list .text {
   font-size: 1.6rem;
-  color: #333333;
+  color: #333;
 }
 
-.ingredients li:not(:first-child) {
+.ingredients-list__item:not(:first-child) {
   margin-top: 0.6rem;
 }
 
@@ -308,25 +309,26 @@ ol {
   counter-reset: ordered;
 }
 
-.instructions-list li {
+.instructions-list__item {
   display: flex;
   gap: 1.6rem;
 }
 
-.instructions-list li:not(:first-child) {
+.instructions-list__item:not(:first-child) {
   margin-top: 2rem;
 }
 
-.instructions-list li::before {
+.instructions-list__item::before {
   content: counter(ordered);
   counter-increment: ordered;
-  flex-shrink: 0;
   width: 3.4rem;
   height: 3.4rem;
+  flex-shrink: 0;
   font-family: "Playfair Display", serif;
   font-size: 2.4rem;
   font-weight: 700;
   text-align: center;
+  line-height: 1.25;
   border-radius: 0.6rem;
   background-color: #f2994a;
   color: #fff;
@@ -344,11 +346,11 @@ ol {
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
-  height: 1px;
+  height: 0.1rem;
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
-  width: 1px;
+  width: 0.1rem;
 }
 
 .footer {

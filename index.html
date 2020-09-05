@@ -31,7 +31,7 @@
             <circle cx="11.5" cy="6.5" r="1.5" fill="#C4C4C4" />
           </svg>
         </div>
-        <p>
+        <p class="text">
           Look no further for a creamy and ultra smooth classic cheesecake
           recipe! Paired with a buttery graham cracker crust, no one can deny
           its simple decadence. For the best results, bake in a water bath.
@@ -40,14 +40,15 @@
       <img src="./img/photo1.png" alt="cheesecake" class="header__image" />
     </header>
     <main class="main">
-      <section class="recipe-time">
-        <div class="recipe-card">
-          <div class="recipe-card__row recipe-card__row--active">
-            <div class="recipe-card__col-1">
+      <section class="serving">
+        <div class="serving-card">
+          <div class="serving-card__row serving-card__row--active">
+            <div class="serving-card__col-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
+                class="icon"
               >
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path
@@ -55,17 +56,18 @@
                 />
               </svg>
             </div>
-            <div class="recipe-card__col-2">
-              <span>Yields</span>
-              <span>12 servings</span>
+            <div class="serving-card__col-2">
+              <span class="text">Yields</span>
+              <span class="text">12 servings</span>
             </div>
           </div>
-          <div class="recipe-card__row">
-            <div class="recipe-card__col-1">
+          <div class="serving-card__row">
+            <div class="serving-card__col-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
+                class="icon"
               >
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path
@@ -74,17 +76,18 @@
                 <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
               </svg>
             </div>
-            <div class="recipe-card__col-2">
-              <span>Prep time</span>
-              <span>45 minutes</span>
+            <div class="serving-card__col-2">
+              <span class="text">Prep time</span>
+              <span class="text">45 minutes</span>
             </div>
           </div>
-          <div class="recipe-card__row">
-            <div class="recipe-card__col-1">
+          <div class="serving-card__row">
+            <div class="serving-card__col-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
+                class="icon"
               >
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path
@@ -93,17 +96,18 @@
                 <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
               </svg>
             </div>
-            <div class="recipe-card__col-2">
-              <span>Cook time</span>
-              <span>1 hour</span>
+            <div class="serving-card__col-2">
+              <span class="text">Cook time</span>
+              <span class="text">1 hour</span>
             </div>
           </div>
-          <div class="recipe-card__row">
-            <div class="recipe-card__col-1">
+          <div class="serving-card__row">
+            <div class="serving-card__col-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
+                class="icon"
               >
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path
@@ -112,44 +116,44 @@
                 <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
               </svg>
             </div>
-            <div class="recipe-card__col-2">
-              <span>Total time</span>
-              <span>7,75 hours</span>
+            <div class="serving-card__col-2">
+              <span class="text">Total time</span>
+              <span class="text">7,75 hours</span>
             </div>
           </div>
         </div>
       </section>
-      <section class="recipe-guide">
+      <section class="guide">
         <section class="ingredients">
-          <h3 class="ingredients__head">Ingredients</h3>
+          <h3 class="ingredients__title">Ingredients</h3>
           <h4 class="ingredients__name">Graham Cracker Crust</h4>
           <ul class="ingredients-list">
-            <li>
+            <li class="ingredients-list__item">
               <label class="checkbox-label">
                 <input type="checkbox" class="visually-hidden" />
                 <div class="checkbox"></div>
-                <span>
+                <span class="text">
                   1 and 1/2 cups (150g)
                   <span class="bold">graham cracker crumbs</span> (about 10 full
                   sheet graham crackers)
                 </span>
               </label>
             </li>
-            <li>
+            <li class="ingredients-list__item">
               <label class="checkbox-label">
                 <input type="checkbox" class="visually-hidden" />
                 <div class="checkbox"></div>
-                <span
+                <span class="text"
                   >5 Tablespoons (70g)
                   <span class="bold">unsalted butter</span>, melted</span
                 >
               </label>
             </li>
-            <li>
+            <li class="ingredients-list__item">
               <label class="checkbox-label">
                 <input type="checkbox" class="visually-hidden" />
                 <div class="checkbox"></div>
-                <span
+                <span class="text"
                   >1/4 cup (50g)
                   <span class="bold">granulated sugar</span></span
                 >
@@ -158,72 +162,72 @@
           </ul>
           <h4 class="ingredients__name">Cheesecake</h4>
           <ul class="ingredients-list">
-            <li>
+            <li class="ingredients-list__item">
               <label class="checkbox-label">
                 <input type="checkbox" class="visually-hidden" />
                 <div class="checkbox"></div>
-                <span>
+                <span class="text">
                   four 8-ounce blocks (904g) full-fat
                   <span class="bold">cream cheese</span>, softened to room
                   temperature
                 </span>
               </label>
             </li>
-            <li>
+            <li class="ingredients-list__item">
               <label class="checkbox-label">
                 <input type="checkbox" class="visually-hidden" />
                 <div class="checkbox"></div>
-                <span
+                <span class="text"
                   >1 cup (200g) <span class="bold">granulated sugar</span></span
                 >
               </label>
             </li>
-            <li>
+            <li class="ingredients-list__item">
               <label class="checkbox-label">
                 <input type="checkbox" class="visually-hidden" />
                 <div class="checkbox"></div>
-                <span
+                <span class="text"
                   >1 cup (240g) full-fat <span class="bold">sour cream</span>,
                   at room temperature</span
                 >
               </label>
             </li>
-            <li>
+            <li class="ingredients-list__item">
               <label class="checkbox-label">
                 <input type="checkbox" class="visually-hidden" />
                 <div class="checkbox"></div>
-                <span
+                <span class="text"
                   >1 teaspoon
                   <span class="bold">pure vanilla extract</span></span
                 >
               </label>
             </li>
-            <li>
+            <li class="ingredients-list__item">
               <label class="checkbox-label">
                 <input type="checkbox" class="visually-hidden" />
                 <div class="checkbox"></div>
-                <span
+                <span class="text"
                   >2 teaspoons
                   <span class="bold">fresh lemon juice</span> (optional, but
                   recommended)</span
                 >
               </label>
             </li>
-            <li>
+            <li class="ingredients-list__item">
               <label class="checkbox-label">
                 <input type="checkbox" class="visually-hidden" />
                 <div class="checkbox"></div>
-                <span
+                <span class="text"
                   >3 large <span class="bold">eggs</span>, at room
                   temperature</span
                 >
               </label>
             </li>
-            <li>
+            <li class="ingredients-list__item">
               <label class="checkbox-label">
                 <input type="checkbox" class="visually-hidden" />
                 <div class="checkbox"></div>
-                <span
+                <span class="text"
                   >topping suggestions:
                   <span class="italic"
                     >salted caramel, lemon curd, strawberry topping, chocolate
@@ -237,16 +241,16 @@
           </ul>
         </section>
         <section class="instructions">
-          <h3 class="instructions__head">Instructions</h3>
+          <h3 class="instructions__title">Instructions</h3>
           <ol class="instructions-list">
-            <li>
-              <p>
+            <li class="instructions-list__item">
+              <p class="text">
                 Adjust the oven rack to the lower-middle position and preheat
                 oven to 350°F (177°C)
               </p>
             </li>
-            <li>
-              <p>
+            <li class="instructions-list__item">
+              <p class="text">
                 <span class="bold">Make the crust:</span> Using a food
                 processor, pulse the graham crackers into crumbs. Pour into a
                 medium bowl and stir in sugar and melted butter until combined.
@@ -260,8 +264,8 @@
                 step 4. Allow crust to slightly cool as you prepare the filling
               </p>
             </li>
-            <li>
-              <p>
+            <li class="instructions-list__item">
+              <p class="text">
                 <span class="bold">Make the filling:</span> Using a handheld or
                 stand mixer fitted with a paddle attachment, beat the cream
                 cheese and granulated sugar together on medium-high speed in a
@@ -275,8 +279,8 @@
                 can.
               </p>
             </li>
-            <li>
-              <p>
+            <li class="instructions-list__item">
+              <p class="text">
                 <span class="bold"
                   >Prepare the simple water bath (see note)</span
                 >
@@ -292,8 +296,8 @@
                 you.)
               </p>
             </li>
-            <li>
-              <p>
+            <li class="instructions-list__item">
+              <p class="text">
                 Bake cheesecake for 55-70 minutes or until the center is almost
                 set. When it’s done, the center of the cheesecake will slightly
                 wobble if you gently shake the pan. Turn the oven off and open
@@ -304,16 +308,16 @@
                 hours or overnight.
               </p>
             </li>
-            <li>
-              <p>
+            <li class="instructions-list__item">
+              <p class="text">
                 Use a knife to loosen the chilled cheesecake from the rim of the
                 springform pan, then remove the rim. Using a clean sharp knife,
                 cut into slices for serving. For neat slices, wipe the knife
                 clean and dip into warm water between each slice.
               </p>
             </li>
-            <li>
-              <p>
+            <li class="instructions-list__item">
+              <p class="text">
                 Serve cheesecake with desired toppings. Cover and store leftover
                 cheesecake in the refrigerator for up to 5 days.
               </p>
